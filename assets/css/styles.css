@@ -173,7 +173,7 @@ nav ul li a:hover {
 
 /* Presentación principal */
 #main-presentation {
-  background-image: url("/assets/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -227,7 +227,7 @@ nav ul li a:hover {
 
 /* Home - Filosofia de trabajo */
 #filosofia-trabajo {
-  background-image: url("/assets/images/filosofia.jpg");
+  background-image: url("../images/filosofia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +284,7 @@ nav ul li a:hover {
 #beneficios {
   padding: 3px 0;
   text-align: center;
-  background-image: url("/assets/images/calidad.jpg");
+  background-image: url("../images/calidad.jpg");
   margin-bottom: -1px;
   /* margin-top: -150px; Reducir el margen inferior */
   /* margin-bottom: 0px; Reducir el margen inferior */
@@ -382,7 +382,7 @@ nav ul li a:hover {
 
 /* Home - Contacto */
 #contacto {
-  background-image: url("/assets/images/contacto.jpg");
+  background-image: url("../images/contacto.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -495,7 +495,7 @@ footer ul li:last-child {
 
 /* Presentación principal */
 #main-presentation2 {
-  background-image: url("/assets/images/main-presentation2.jpg");
+  background-image: url("../images/main-presentation2.jpg");
   background-size: cover;
   background-position: center;
   background-color: #000000;
@@ -546,7 +546,7 @@ footer ul li:last-child {
 }
 
 #nuestra-historia {
-  background-image: url("/assets/images/historia.jpg");
+  background-image: url("../images/historia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -623,7 +623,7 @@ footer ul li:last-child {
 /* Página servicio de importación */
 
 #main-presentation3 {
-  background-image: url("/assets/images/main-presentation3.jpg");
+  background-image: url("../images/main-presentation3.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -657,7 +657,7 @@ footer ul li:last-child {
 
 /* Sección proceso */
 #proceso {
-  background-image: url("/assets/images/importaciones2.jpg");
+  background-image: url("../images/importaciones2.jpg");
   color: #cc0000;
   padding: 50px 0;
   background-size: cover;
@@ -709,7 +709,7 @@ footer ul li:last-child {
 
 /* Contacto */
 #contacto2 {
-  background-image: url("/assets/images/contacto2.jpg");
+  background-image: url("../images/contacto2.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -785,7 +785,7 @@ footer ul li:last-child {
 /* Página - Calidad verificada */
 
 #main-presentation4 {
-  background-image: url("/assets/images/main-presentation4.jpg");
+  background-image: url("../images/main-presentation4.jpg");
   background-size: cover;
   background-position: center;
   color: #f5f5f5;
@@ -918,7 +918,7 @@ li {
 #beneficios2 {
   padding: 3px 0;
   text-align: center;
-  background-image: url("/assets/images/calidad.jpg");
+  background-image: url("../images/calidad.jpg");
   margin-top: -20x; /* Reducir el margen inferior */
   margin-bottom: 0px; /* Reducir el margen inferior */
 }
@@ -1013,7 +1013,7 @@ li {
 
 /* Contacto */
 #contacto2 {
-  background-image: url("/assets/images/contacto2.jpg");
+  background-image: url("../images/contacto2.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1089,7 +1089,7 @@ li {
 /* Página de clientes */
 
 #main-presentation9 {
-  background-image: url("/assets/images/main-presentation9.jpg");
+  background-image: url("../images/main-presentation9.jpg");
   background-size: cover;
   background-position: center;
   color: #f5f5f5;
