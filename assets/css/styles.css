@@ -580,7 +580,8 @@ footer ul li:last-child {
   text-align: justify;
   line-height: 1.65;
   margin-top: 0;
-}e-no
+}
+e-no
 
 /* Estilos para la nueva sección "Sobre nosotros" */
 
@@ -1197,77 +1198,74 @@ li {
     font-size: 18px;
   }
 
-    #main-presentation2 h1 {
+  #main-presentation2 h1 {
     font-size: 30px;
-    }
+  }
 
-    /* section sobre-nosotros */
+  /* section sobre-nosotros */
 
-        #nuestra-historia {
-         
-          display: inline-block;
-          padding: 0%;
-          
-        }
+  #nuestra-historia {
+    display: inline-block;
+    padding: 0%;
+  }
 
-        .text-container {
-            text-align: center !important;
-                }
-          #nuestra-historia p {
-            font-size: 15px;
-            color: #f0eeee;
-            margin-bottom: 30px;
-            width: 100%;
-            padding: 0 30px;
-            /* Limita el ancho al 50% */
-            font-weight: normal;
-            text-align: justify;
-            line-height: 1.65;
-            margin-top: 0;
-            }
-                    #nuestra-historia h3 {
-                      font-size: 20px;
-                      text-align: center;
-                      color: #cc0000;
-                      margin-top: 0;
-                      margin-left: 0px;
-                      max-width: 100%;
-                      /* Limita el ancho al 50% */
-                    }
-                                        .icon-container {
-                                          display: flex;
-                                          flex-direction: column;
-                                          justify-content: center;
-                                          align-items: center;
-                                        }
+  .text-container {
+    text-align: center !important;
+  }
+  #nuestra-historia p {
+    font-size: 15px;
+    color: #f0eeee;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 30px;
+    /* Limita el ancho al 50% */
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.65;
+    margin-top: 0;
+  }
+  #nuestra-historia h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #cc0000;
+    margin-top: 0;
+    margin-left: 0px;
+    max-width: 100%;
+    /* Limita el ancho al 50% */
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   /* Servicio de importación */
-    #main-presentation3 h1 {
-      font-size: 24px;
-      color: #cc0000;
-      padding: 0;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-      text-align: center;
-      margin-top: 150px;
-      margin-bottom: 0;
-    }
-    #proceso {
-      padding: 0%;
-    }
-        #proceso .container {
-          width: 100%;
-            background-size: cover;
-             display: inline-block; 
-              
-        }
+  #main-presentation3 h1 {
+    font-size: 24px;
+    color: #cc0000;
+    padding: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 0;
+  }
+  #proceso {
+    padding: 0%;
+  }
+  #proceso .container {
+    width: 100%;
+    background-size: cover;
+    display: inline-block;
+  }
 
   /* Section Calidad verificada */
-            #main-presentation4 h1{
-              font-size: 24px;
-            }
+  #main-presentation4 h1 {
+    font-size: 24px;
+  }
   /* Section Clientes */
-                #main-presentation9 h1{
-                  font-size: 24px;
-                }
+  #main-presentation9 h1 {
+    font-size: 24px;
+  }
   /* Section Filosofia-trabajo */
   #filosofia-trabajo {
     align-items: center;
