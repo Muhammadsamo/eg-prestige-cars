@@ -580,7 +580,7 @@ footer ul li:last-child {
   text-align: justify;
   line-height: 1.65;
   margin-top: 0;
-}
+}e-no
 
 /* Estilos para la nueva sección "Sobre nosotros" */
 
@@ -1196,6 +1196,23 @@ li {
   #main-presentation h1 {
     font-size: 18px;
   }
+
+    #main-presentation2 h1 {
+    font-size: 30px;
+    }
+
+    /* section sobre-nosotros */
+
+        #nuestra-historia {
+         
+          display: inline-block;
+          padding: 0%;
+          padding-left: 200px;
+        }
+
+                .text-container {
+                  text-align: center !important;
+                }
 
   /* Section Filosofia-trabajo */
   #filosofia-trabajo {
