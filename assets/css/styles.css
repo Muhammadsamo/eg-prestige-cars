@@ -173,7 +173,7 @@ nav ul li a:hover {
 
 /* Presentación principal */
 #main-presentation {
-  background-image: url("/assets/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -227,7 +227,7 @@ nav ul li a:hover {
 
 /* Home - Filosofia de trabajo */
 #filosofia-trabajo {
-  background-image: url("/assets/images/filosofia.jpg");
+  background-image: url("../images/filosofia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +284,7 @@ nav ul li a:hover {
 #beneficios {
   padding: 3px 0;
   text-align: center;
-  background-image: url("/assets/images/calidad.jpg");
+  background-image: url("../images/calidad.jpg");
   margin-bottom: -1px;
   /* margin-top: -150px; Reducir el margen inferior */
   /* margin-bottom: 0px; Reducir el margen inferior */
@@ -382,7 +382,7 @@ nav ul li a:hover {
 
 /* Home - Contacto */
 #contacto {
-  background-image: url("/assets/images/contacto.jpg");
+  background-image: url("../images/contacto.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -495,7 +495,7 @@ footer ul li:last-child {
 
 /* Presentación principal */
 #main-presentation2 {
-  background-image: url("/assets/images/main-presentation2.jpg");
+  background-image: url("../images/main-presentation2.jpg");
   background-size: cover;
   background-position: center;
   background-color: #000000;
@@ -538,22 +538,17 @@ footer ul li:last-child {
 }
 
 /* Sección nuestra historia */
-#nuestra-historia {
-  height: 100vh;
-  color: #cc0000;
-  padding: 0;
-  margin: 0;
-}
 
 #nuestra-historia {
-  background-image: url("/assets/images/historia.jpg");
+  min-height: 100vh;
+  color: #cc0000;
+  background-image: url("../images/historia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
-  height: 100vh;
-  padding: 0;
   margin: 20;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -581,6 +576,7 @@ footer ul li:last-child {
   line-height: 1.65;
   margin-top: 0;
 }
+e-no
 
 /* Estilos para la nueva sección "Sobre nosotros" */
 
@@ -616,14 +612,14 @@ footer ul li:last-child {
 }
 
 .icon-container img {
-  width: 438px;
-  height: 306px;
+  width: 100%;
+  height: auto;
 }
 
 /* Página servicio de importación */
 
 #main-presentation3 {
-  background-image: url("/assets/images/main-presentation3.jpg");
+  background-image: url("../images/main-presentation3.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -657,7 +653,7 @@ footer ul li:last-child {
 
 /* Sección proceso */
 #proceso {
-  background-image: url("/assets/images/importaciones2.jpg");
+  background-image: url("../images/importaciones2.jpg");
   color: #cc0000;
   padding: 50px 0;
   background-size: cover;
@@ -709,7 +705,7 @@ footer ul li:last-child {
 
 /* Contacto */
 #contacto2 {
-  background-image: url("/assets/images/contacto2.jpg");
+  background-image: url("../images/contacto2.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -785,7 +781,7 @@ footer ul li:last-child {
 /* Página - Calidad verificada */
 
 #main-presentation4 {
-  background-image: url("/assets/images/main-presentation4.jpg");
+  background-image: url("../images/main-presentation4.jpg");
   background-size: cover;
   background-position: center;
   color: #f5f5f5;
@@ -918,9 +914,10 @@ li {
 #beneficios2 {
   padding: 3px 0;
   text-align: center;
-  background-image: url("/assets/images/calidad.jpg");
+  background-image: url("../images/calidad.jpg");
   margin-top: -20x; /* Reducir el margen inferior */
   margin-bottom: 0px; /* Reducir el margen inferior */
+  padding-bottom: 3rem;
 }
 
 #beneficios2 h2,
@@ -953,8 +950,8 @@ li {
 }
 
 .beneficio2 {
-  width: 280px; /* Ancho de 300px */
-  height: 220px; /* Alto de 250px */
+  width: 300px; /* Ancho de 300px */
+  height: 240px; /* Alto de 250px */
   background-color: #e1eaf55d;
   padding: 20px;
   border-radius: 5px;
@@ -1013,7 +1010,7 @@ li {
 
 /* Contacto */
 #contacto2 {
-  background-image: url("/assets/images/contacto2.jpg");
+  background-image: url("../images/contacto2.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1089,7 +1086,7 @@ li {
 /* Página de clientes */
 
 #main-presentation9 {
-  background-image: url("/assets/images/main-presentation9.jpg");
+  background-image: url("../images/main-presentation9.jpg");
   background-size: cover;
   background-position: center;
   color: #f5f5f5;
@@ -1133,6 +1130,10 @@ li {
   margin-right: 0px; /* Separación entre el texto y el iframe */
 }
 
+.instagram-text h2 {
+  margin-bottom: 1rem;
+}
+
 .instagram-iframe {
   flex: 1;
   display: flex;
@@ -1152,13 +1153,15 @@ li {
   .main-nav {
     font-size: 14px;
   }
+  #nuestra-historia p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   /* Container */
   .container {
     margin: 0 !important;
-    text-align: center !important;
   }
   /* Header */
   header .container {
@@ -1195,6 +1198,75 @@ li {
   }
   #main-presentation h1 {
     font-size: 18px;
+  }
+
+  #main-presentation2 h1 {
+    font-size: 30px;
+  }
+
+  /* section sobre-nosotros */
+
+  #nuestra-historia {
+    display: inline-block;
+    padding: 0%;
+  }
+
+  .text-container {
+    text-align: center !important;
+  }
+  #nuestra-historia {
+    padding-inline: 20px;
+  }
+  #nuestra-historia p {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  #nuestra-historia h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  /* Servicio de importación */
+  #main-presentation3 h1,
+  #main-presentation4 h1,
+  #main-presentation9 h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-block: 0;
+  }
+  #proceso {
+    padding: 0%;
+  }
+  #proceso .container {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  #proceso h3,
+  #proceso p {
+    margin-left: 0;
+  }
+
+  /* Section #calidad-verificada2 */
+
+  #calidad-verificada2 p {
+    text-align: justify;
+  }
+
+  #calidad-verificada2 h2 {
+    padding-bottom: 1rem;
+  }
+
+  .hashtags span {
+    margin-bottom: 0.5rem;
   }
 
   /* Section Filosofia-trabajo */
@@ -1234,21 +1306,30 @@ li {
 
   #filosofia-trabajo a {
     text-decoration: none;
-    max-width: 230px;
+    max-width: 14.375rem;
     border-radius: 4px;
   }
   /* Section Beneficios */
   #beneficios {
-    padding-top: 50px;
+    padding-top: 3.125rem;
   }
   #beneficios h3 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
+  /* Section Beneficios2 */
+
+  #beneficios2 h2 {
+    font-size: 1.875rem;
+  }
+
+  .ver-beneficios2-btn {
+    font-size: 1rem;
+  }
   /* Section Cotact */
 
   #contacto {
-    padding-inline-start: 20px;
+    padding-inline-start: 1.25rem;
   }
 
   #contacto form {
@@ -1257,25 +1338,25 @@ li {
 
   /* Footer */
   footer {
-    padding-top: 40px;
-    padding-inline: 20px;
+    padding-top: 2.5rem;
+    padding-inline: 1.25rem;
   }
   footer img {
-    max-width: 36px;
+    max-width: 2.25rem;
   }
   .social-media img {
-    margin-inline: 16px;
+    margin-inline: 1rem;
   }
   .social-media img:first-child {
     padding-left: 0;
   }
   footer .social-media {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 }
 
 @media screen and (max-width: 560px) {
   #contacto h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
