@@ -538,22 +538,17 @@ footer ul li:last-child {
 }
 
 /* Sección nuestra historia */
-#nuestra-historia {
-  height: 100vh;
-  color: #cc0000;
-  padding: 0;
-  margin: 0;
-}
 
 #nuestra-historia {
+  min-height: 100vh;
+  color: #cc0000;
   background-image: url("../images/historia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
-  height: 100vh;
-  padding: 0;
   margin: 20;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -617,8 +612,8 @@ e-no
 }
 
 .icon-container img {
-  width: 438px;
-  height: 306px;
+  width: 100%;
+  height: auto;
 }
 
 /* Página servicio de importación */
@@ -922,6 +917,7 @@ li {
   background-image: url("../images/calidad.jpg");
   margin-top: -20x; /* Reducir el margen inferior */
   margin-bottom: 0px; /* Reducir el margen inferior */
+  padding-bottom: 3rem;
 }
 
 #beneficios2 h2,
@@ -954,8 +950,8 @@ li {
 }
 
 .beneficio2 {
-  width: 280px; /* Ancho de 300px */
-  height: 220px; /* Alto de 250px */
+  width: 300px; /* Ancho de 300px */
+  height: 240px; /* Alto de 250px */
   background-color: #e1eaf55d;
   padding: 20px;
   border-radius: 5px;
@@ -1134,6 +1130,10 @@ li {
   margin-right: 0px; /* Separación entre el texto y el iframe */
 }
 
+.instagram-text h2 {
+  margin-bottom: 1rem;
+}
+
 .instagram-iframe {
   flex: 1;
   display: flex;
@@ -1153,13 +1153,15 @@ li {
   .main-nav {
     font-size: 14px;
   }
+  #nuestra-historia p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   /* Container */
   .container {
     margin: 0 !important;
-    text-align: center !important;
   }
   /* Header */
   header .container {
@@ -1212,60 +1214,61 @@ li {
   .text-container {
     text-align: center !important;
   }
+  #nuestra-historia {
+    padding-inline: 20px;
+  }
   #nuestra-historia p {
-    font-size: 15px;
-    color: #f0eeee;
-    margin-bottom: 30px;
     width: 100%;
-    padding: 0 30px;
-    /* Limita el ancho al 50% */
-    font-weight: normal;
-    text-align: justify;
-    line-height: 1.65;
     margin-top: 0;
+    margin-left: 0;
   }
   #nuestra-historia h3 {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
-    color: #cc0000;
-    margin-top: 0;
-    margin-left: 0px;
     max-width: 100%;
-    /* Limita el ancho al 50% */
+    margin-bottom: 1rem;
   }
   .icon-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 1rem;
   }
   /* Servicio de importación */
-  #main-presentation3 h1 {
-    font-size: 24px;
-    color: #cc0000;
-    padding: 0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  #main-presentation3 h1,
+  #main-presentation4 h1,
+  #main-presentation9 h1 {
+    font-size: 30px;
     text-align: center;
-    margin-top: 150px;
-    margin-bottom: 0;
+    margin-block: 0;
   }
   #proceso {
     padding: 0%;
   }
   #proceso .container {
     width: 100%;
-    background-size: cover;
-    display: inline-block;
+    padding-bottom: 1rem;
+  }
+  #proceso h3,
+  #proceso p {
+    margin-left: 0;
   }
 
-  /* Section Calidad verificada */
-  #main-presentation4 h1 {
-    font-size: 24px;
+  /* Section #calidad-verificada2 */
+
+  #calidad-verificada2 p {
+    text-align: justify;
   }
-  /* Section Clientes */
-  #main-presentation9 h1 {
-    font-size: 24px;
+
+  #calidad-verificada2 h2 {
+    padding-bottom: 1rem;
   }
+
+  .hashtags span {
+    margin-bottom: 0.5rem;
+  }
+
   /* Section Filosofia-trabajo */
   #filosofia-trabajo {
     align-items: center;
@@ -1303,21 +1306,30 @@ li {
 
   #filosofia-trabajo a {
     text-decoration: none;
-    max-width: 230px;
+    max-width: 14.375rem;
     border-radius: 4px;
   }
   /* Section Beneficios */
   #beneficios {
-    padding-top: 50px;
+    padding-top: 3.125rem;
   }
   #beneficios h3 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
+  /* Section Beneficios2 */
+
+  #beneficios2 h2 {
+    font-size: 1.875rem;
+  }
+
+  .ver-beneficios2-btn {
+    font-size: 1rem;
+  }
   /* Section Cotact */
 
   #contacto {
-    padding-inline-start: 20px;
+    padding-inline-start: 1.25rem;
   }
 
   #contacto form {
@@ -1326,25 +1338,25 @@ li {
 
   /* Footer */
   footer {
-    padding-top: 40px;
-    padding-inline: 20px;
+    padding-top: 2.5rem;
+    padding-inline: 1.25rem;
   }
   footer img {
-    max-width: 36px;
+    max-width: 2.25rem;
   }
   .social-media img {
-    margin-inline: 16px;
+    margin-inline: 1rem;
   }
   .social-media img:first-child {
     padding-left: 0;
   }
   footer .social-media {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 }
 
 @media screen and (max-width: 560px) {
   #contacto h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
