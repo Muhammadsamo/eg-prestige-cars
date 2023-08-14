@@ -5,6 +5,8 @@ $(document).ready(function () {
 const menuBtn = document.querySelector(".mobile-nav-btn");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileNavBtnBurger = document.querySelector(".mobile-nav-btn__burger");
+const accordionBtn = document.querySelector(".nuestra-historia-heading");
+const accordionBox = document.querySelector(".nuestra-historia-mobile");
 
 let showMenu = false;
 
@@ -20,4 +22,8 @@ menuBtn.addEventListener("click", () => {
 
     showMenu = false;
   }
+});
+
+accordionBtn.addEventListener("click", () => {
+  accordionBox.classList.toggle("active");
 });

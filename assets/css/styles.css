@@ -178,13 +178,14 @@ nav ul li a:hover {
   background-position: center;
   color: #fff;
   text-align: center;
-  padding: 150px 0;
+  min-height: calc(100vh - 68px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: -1px;
+  margin-top: 68px;
 }
 
 #main-presentation h1 {
@@ -502,7 +503,7 @@ footer ul li:last-child {
   text-align: center;
   padding: 90px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  margin-bottom: px;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -547,7 +548,6 @@ footer ul li:last-child {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
-  margin: 20;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -555,6 +555,10 @@ footer ul li:last-child {
   align-items: flex-start;
   padding: 90px;
   margin-bottom: -20px; /* Reducir el margen inferior */
+}
+
+.nuestra-historia-mobile {
+  display: none;
 }
 
 #nuestra-historia h3 {
@@ -591,6 +595,7 @@ e-no
   padding: 50px 0;
   background-color: #000000;
   text-align: center;
+  margin-top: -1rem;
 }
 
 .icon-container {
@@ -621,7 +626,6 @@ e-no
 #main-presentation3 {
   background-image: url("../images/main-presentation3.jpg");
   background-size: cover;
-  background-position: center;
   color: #fff;
   padding: 130px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -629,6 +633,7 @@ e-no
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-top: 68px;
 }
 
 #main-presentation3 h1 {
@@ -663,6 +668,12 @@ e-no
   justify-content: flex-start;
   margin-bottom: -20px;
   background-position: center center;
+}
+
+.proceso-mobile-img {
+  width: 100%;
+  height: auto;
+  display: none;
 }
 
 #proceso h3 {
@@ -789,6 +800,7 @@ e-no
   padding: 130px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: -20px;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1094,6 +1106,7 @@ li {
   padding: 140px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 0px;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1209,6 +1222,7 @@ li {
   #nuestra-historia {
     display: inline-block;
     padding: 0%;
+    min-height: auto;
   }
 
   .text-container {
@@ -1217,16 +1231,50 @@ li {
   #nuestra-historia {
     padding-inline: 20px;
   }
+  .nuestra-historia-desktop {
+    display: none;
+  }
+  .nuestra-historia-mobile {
+    display: block;
+  }
+
+  #nuestra-historia .text-container {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+  }
+
+  .nuestra-historia-mobile.active .text-container {
+    height: 1035.75px !important;
+  }
+
   #nuestra-historia p {
     width: 100%;
     margin-top: 0;
     margin-left: 0;
+    transition: 0.5s;
   }
+
   #nuestra-historia h3 {
     font-size: 1.5rem;
-    text-align: center;
     max-width: 100%;
     margin-bottom: 1rem;
+    position: relative;
+  }
+  .nuestra-historia-mobile h3::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+  }
+  .nuestra-historia-mobile.active h3::after {
+    content: "-";
+  }
+  .nuestra-historia-mobile h3::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
   }
   .icon-container {
     display: flex;
@@ -1236,6 +1284,10 @@ li {
     row-gap: 1rem;
   }
   /* Servicio de importación */
+  #main-presentation3 {
+    background-position: bottom;
+  }
+
   #main-presentation3 h1,
   #main-presentation4 h1,
   #main-presentation9 h1 {
@@ -1244,21 +1296,25 @@ li {
     margin-block: 0;
   }
   #proceso {
-    padding: 0%;
+    background-image: none;
   }
   #proceso .container {
     width: 100%;
     padding-bottom: 1rem;
   }
+  .proceso-mobile-img {
+    display: block;
+  }
   #proceso h3,
   #proceso p {
     margin-left: 0;
+    text-align: left;
   }
 
   /* Section #calidad-verificada2 */
 
   #calidad-verificada2 p {
-    text-align: justify;
+    text-align: left;
   }
 
   #calidad-verificada2 h2 {
@@ -1336,6 +1392,17 @@ li {
     text-align: center;
   }
 
+  /* Clients page */
+
+  .instagram-text {
+    text-align: left;
+  }
+
+  .instagram-iframe iframe {
+    min-height: 700px;
+    height: auto;
+  }
+
   /* Footer */
   footer {
     padding-top: 2.5rem;
@@ -1358,5 +1425,14 @@ li {
 @media screen and (max-width: 560px) {
   #contacto h2 {
     font-size: 1.5rem;
+  }
+
+  .instagram-iframe iframe {
+    min-height: 550px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .instagram-iframe iframe {
+    min-height: 420px;
   }
 }
